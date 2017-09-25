@@ -1,0 +1,137 @@
+[{
+  "request": {
+    "method": "get",
+    "uri": "/getUnread"
+  },
+  "response": {
+    "json": {
+      "data": {
+        "unreadCount": 1
+      },
+      "msg": "000200",
+      "success": true
+    }
+  }
+}, {
+  "request": {
+    "method": "get",
+    "uri": "/getCategorys"
+  },
+  "response": {
+    "json": {
+      "success": 0,
+      "msg": "string",
+      "data": [{
+        "categoryId": 1,
+        "title": "运营通知",
+        "unreadCount": 0
+      }, {
+        "categoryId": 2,
+        "title": "我的优惠",
+        "unreadCount": 0
+      }, {
+        "categoryId": 3,
+        "title": "订单通知",
+        "unreadCount": 0
+      }, {
+        "categoryId": 4,
+        "title": "活动通知",
+        "unreadCount": 0
+      }, {
+        "categoryId": 5,
+        "title": "商品通知",
+        "unreadCount": 0
+      }]
+    }
+  }
+}, {
+  "request": {
+    "method": "get",
+    "uri": "/getMessages"
+  },
+  "response": {
+    "json": {
+      "success": 1,
+      "msg": "msg",
+      "data": [{
+        "messageId": 1,
+        "title": "推送标题",
+        "digest": "推送摘要",
+        "content": "详细内容",
+        "is_read": 0
+      }]
+    }
+  }
+}, {
+  "request": {
+    "method": "get",
+    "uri": "/getMessageDetail"
+  },
+  "response": {
+    "json": {
+      "success": 0,
+      "msg": "msg",
+      "data": {
+        "messageId": 0,
+        "title": "string",
+        "digest": "string",
+        "content": "string",
+        "is_read": 0
+      }
+    }
+  }
+}, {
+  "request": {
+    "method": "get",
+    "uri": "/getNoticesList"
+  },
+  "response": {
+    "json": {
+      "data": [{
+        "is_read": "0",
+        "title": "牛逼通知"
+      }, {
+        "is_read": "1",
+        "title": "我的优惠"
+      }, {
+        "is_read": "0",
+        "title": "订单通知"
+      }, {
+        "is_read": "1",
+        "title": "活动通知"
+      }, {
+        "is_read": "1",
+        "title": "商品通知"
+      }],
+      "msg": "000200",
+      "success": true
+    }
+  }
+}, {
+  "request": {
+    "method": "get",
+    "uri": "/getBdInfoList"
+  },
+  "response": {
+    "json": {
+      "data": [{
+        "firstword": "A",
+        "name": "阿斌"
+      }, {
+        "firstword": "B",
+        "name": "爸爸"
+      }, {
+        "firstword": "C",
+        "name": "擦边球"
+      }, {
+        "firstword": "D",
+        "name": "大神"
+      }, {
+        "firstword": "E",
+        "name": "诶米"
+      }],
+      "msg": "000200",
+      "success": true
+    }
+  }
+}]
